@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#ff9d1ab1" />
+            <size android:height="62.0dip" android:width="62.0dip" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/ic_veryfi_lens_stitch" android:left="19.0dip" android:top="19.0dip" android:right="19.0dip" android:bottom="19.0dip" />
+</layer-list>

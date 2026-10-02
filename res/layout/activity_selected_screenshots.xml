@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.veryfi.lens.screenshots.StoppableScrollView android:orientation="vertical" android:id="@id/scroll_view" android:background="#ffcccccc" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:fadeScrollbars="false" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="15.0dip" />
+    </com.veryfi.lens.screenshots.StoppableScrollView>
+    <FrameLayout android:gravity="center" android:id="@id/progress" android:background="@color/veryfi_lens_black_70_transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.veryfi.lens.customviews.loadindicator.LoadingIndicatorView android:layout_gravity="center" android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:indicatorColor="@color/veryfi_lens_control_background_2" app:indicatorName="BallPulseIndicator" style="@style/VeryfiLensLoadingIndicatorView" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,279 @@
+.class public final Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel;
+.super Lcom/adyenreactnativesdk/component/base/viewmodel/BaseViewModel;
+.source "AdvancedComponentViewModel.kt"
+
+# interfaces
+.implements Lcom/adyen/checkout/components/core/ComponentCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel$Companion;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<TState::",
+        "Lcom/adyen/checkout/components/core/PaymentComponentState<",
+        "*>;>",
+        "Lcom/adyenreactnativesdk/component/base/viewmodel/BaseViewModel<",
+        "TTState;>;",
+        "Lcom/adyen/checkout/components/core/ComponentCallback<",
+        "TTState;>;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000:\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0018\u0000 \u0017*\u000c\u0008\u0000\u0010\u0001*\u0006\u0012\u0002\u0008\u00030\u00022\u0008\u0012\u0004\u0012\u0002H\u00010\u00032\u0008\u0012\u0004\u0012\u0002H\u00010\u0004:\u0001\u0017B\u0007\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J\u001a\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\n2\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u000cH\u0016J\u0010\u0010\r\u001a\u00020\u00082\u0006\u0010\u000e\u001a\u00020\u000fH\u0016J\u0015\u0010\u0010\u001a\u00020\u00082\u0006\u0010\u0011\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010\u0012J\u0010\u0010\u0013\u001a\u00020\u00082\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0008\u0010\u0016\u001a\u00020\u0008H\u0016\u00a8\u0006\u0018"
+    }
+    d2 = {
+        "Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel;",
+        "TState",
+        "Lcom/adyen/checkout/components/core/PaymentComponentState;",
+        "Lcom/adyenreactnativesdk/component/base/viewmodel/BaseViewModel;",
+        "Lcom/adyen/checkout/components/core/ComponentCallback;",
+        "<init>",
+        "()V",
+        "startPayment",
+        "",
+        "paymentMethod",
+        "Lcom/adyen/checkout/components/core/PaymentMethod;",
+        "session",
+        "Lcom/adyen/checkout/sessions/core/CheckoutSession;",
+        "onAdditionalDetails",
+        "actionComponentData",
+        "Lcom/adyen/checkout/components/core/ActionComponentData;",
+        "onSubmit",
+        "state",
+        "(Lcom/adyen/checkout/components/core/PaymentComponentState;)V",
+        "onError",
+        "componentError",
+        "Lcom/adyen/checkout/components/core/ComponentError;",
+        "cancel",
+        "Companion",
+        "adyen_react-native_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final Companion:Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel$Companion;
+
+.field private static final TAG:Ljava/lang/String; = "AdvancedViewModel"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel;->Companion:Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel$Companion;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 18
+    invoke-direct {p0}, Lcom/adyenreactnativesdk/component/base/viewmodel/BaseViewModel;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public cancel()V
+    .locals 2
+
+    .line 50
+    sget-object v0, Lcom/adyenreactnativesdk/AdyenPaymentPackage;->Companion:Lcom/adyenreactnativesdk/AdyenPaymentPackage$Companion;
+
+    invoke-virtual {v0}, Lcom/adyenreactnativesdk/AdyenPaymentPackage$Companion;->getMessageBus()Lcom/adyenreactnativesdk/util/messaging/MessageBus;
+
+    move-result-object v0
+
+    new-instance v1, Lcom/adyenreactnativesdk/component/base/ModuleException$Canceled;
+
+    invoke-direct {v1}, Lcom/adyenreactnativesdk/component/base/ModuleException$Canceled;-><init>()V
+
+    check-cast v1, Ljava/lang/Exception;
+
+    invoke-virtual {v0, v1}, Lcom/adyenreactnativesdk/util/messaging/MessageBus;->onException(Ljava/lang/Exception;)V
+
+    return-void
+.end method
+
+.method public onAdditionalDetails(Lcom/adyen/checkout/components/core/ActionComponentData;)V
+    .locals 1
+
+    const-string v0, "actionComponentData"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 32
+    sget-object v0, Lcom/adyenreactnativesdk/AdyenPaymentPackage;->Companion:Lcom/adyenreactnativesdk/AdyenPaymentPackage$Companion;
+
+    invoke-virtual {v0}, Lcom/adyenreactnativesdk/AdyenPaymentPackage$Companion;->getMessageBus()Lcom/adyenreactnativesdk/util/messaging/MessageBus;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/adyenreactnativesdk/util/messaging/MessageBus;->onAdditionalDetails(Lcom/adyen/checkout/components/core/ActionComponentData;)V
+
+    return-void
+.end method
+
+.method public onError(Lcom/adyen/checkout/components/core/ComponentError;)V
+    .locals 1
+
+    const-string v0, "componentError"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 41
+    invoke-virtual {p1}, Lcom/adyen/checkout/components/core/ComponentError;->getException()Lcom/adyen/checkout/core/exception/CheckoutException;
+
+    move-result-object v0
+
+    instance-of v0, v0, Lcom/adyen/checkout/core/exception/CancellationException;
+
+    if-eqz v0, :cond_0
+
+    .line 42
+    new-instance p1, Lcom/adyenreactnativesdk/component/base/ModuleException$Canceled;
+
+    invoke-direct {p1}, Lcom/adyenreactnativesdk/component/base/ModuleException$Canceled;-><init>()V
+
+    check-cast p1, Ljava/lang/RuntimeException;
+
+    goto :goto_0
+
+    .line 44
+    :cond_0
+    invoke-virtual {p1}, Lcom/adyen/checkout/components/core/ComponentError;->getException()Lcom/adyen/checkout/core/exception/CheckoutException;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/RuntimeException;
+
+    .line 46
+    :goto_0
+    sget-object v0, Lcom/adyenreactnativesdk/AdyenPaymentPackage;->Companion:Lcom/adyenreactnativesdk/AdyenPaymentPackage$Companion;
+
+    invoke-virtual {v0}, Lcom/adyenreactnativesdk/AdyenPaymentPackage$Companion;->getMessageBus()Lcom/adyenreactnativesdk/util/messaging/MessageBus;
+
+    move-result-object v0
+
+    check-cast p1, Ljava/lang/Exception;
+
+    invoke-virtual {v0, p1}, Lcom/adyenreactnativesdk/util/messaging/MessageBus;->onException(Ljava/lang/Exception;)V
+
+    return-void
+.end method
+
+.method public onPermissionRequest(Ljava/lang/String;Lcom/adyen/checkout/core/PermissionHandlerCallback;)V
+    .locals 0
+
+    .line 17
+    invoke-static {p0, p1, p2}, Lcom/adyen/checkout/components/core/ComponentCallback$DefaultImpls;->onPermissionRequest(Lcom/adyen/checkout/components/core/ComponentCallback;Ljava/lang/String;Lcom/adyen/checkout/core/PermissionHandlerCallback;)V
+
+    return-void
+.end method
+
+.method public onStateChanged(Lcom/adyen/checkout/components/core/PaymentComponentState;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TTState;)V"
+        }
+    .end annotation
+
+    .line 17
+    invoke-static {p0, p1}, Lcom/adyen/checkout/components/core/ComponentCallback$DefaultImpls;->onStateChanged(Lcom/adyen/checkout/components/core/ComponentCallback;Lcom/adyen/checkout/components/core/PaymentComponentState;)V
+
+    return-void
+.end method
+
+.method public onSubmit(Lcom/adyen/checkout/components/core/PaymentComponentState;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TTState;)V"
+        }
+    .end annotation
+
+    const-string v0, "state"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 36
+    sget-object v0, Lcom/adyenreactnativesdk/AdyenPaymentPackage;->Companion:Lcom/adyenreactnativesdk/AdyenPaymentPackage$Companion;
+
+    invoke-virtual {v0}, Lcom/adyenreactnativesdk/AdyenPaymentPackage$Companion;->getMessageBus()Lcom/adyenreactnativesdk/util/messaging/MessageBus;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, p1, v1}, Lcom/adyenreactnativesdk/util/messaging/MessageBus;->onSubmit(Lcom/adyen/checkout/components/core/PaymentComponentState;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public startPayment(Lcom/adyen/checkout/components/core/PaymentMethod;Lcom/adyen/checkout/sessions/core/CheckoutSession;)V
+    .locals 6
+
+    const-string p2, "paymentMethod"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 25
+    move-object p2, p0
+
+    check-cast p2, Landroidx/lifecycle/ViewModel;
+
+    invoke-static {p2}, Landroidx/lifecycle/ViewModelKt;->getViewModelScope(Landroidx/lifecycle/ViewModel;)Lkotlinx/coroutines/CoroutineScope;
+
+    move-result-object v0
+
+    invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getIO()Lkotlinx/coroutines/CoroutineDispatcher;
+
+    move-result-object p2
+
+    move-object v1, p2
+
+    check-cast v1, Lkotlin/coroutines/CoroutineContext;
+
+    new-instance p2, Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel$startPayment$1;
+
+    const/4 v2, 0x0
+
+    invoke-direct {p2, p1, p0, p0, v2}, Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel$startPayment$1;-><init>(Lcom/adyen/checkout/components/core/PaymentMethod;Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel;Lcom/adyenreactnativesdk/component/base/viewmodel/AdvancedComponentViewModel;Lkotlin/coroutines/Continuation;)V
+
+    move-object v3, p2
+
+    check-cast v3, Lkotlin/jvm/functions/Function2;
+
+    const/4 v4, 0x2
+
+    const/4 v5, 0x0
+
+    invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+
+    return-void
+.end method

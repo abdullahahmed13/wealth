@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/dialog_view_layout" android:padding="@dimen/veryfi_lens_content_inset_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/veryfi_lens_content_inset_large" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/txt_tip_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/veryfi_lens_dialog_title_black_and_white" android:textAlignment="center" style="@style/VeryfiLensDialogTitle" />
+        <TextView android:id="@id/txt_tip_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/veryfi_lens_content_inset_medium" android:text="@string/veryfi_lens_dialog_body_black_and_white" android:textAlignment="center" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:padding="8.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/veryfi_lens_content_inset_medium">
+            <androidx.appcompat.widget.AppCompatButton android:id="@id/txt_cancel" android:background="@drawable/background_rounded_border_button_white_veryfi_lens" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/veryfi_lens_dialog_no_black_and_white" android:textAllCaps="false" android:layout_marginEnd="8.0dip" android:paddingHorizontal="10.0dip" android:paddingVertical="6.0dip" />
+            <androidx.appcompat.widget.AppCompatButton android:id="@id/txt_ok" android:background="@drawable/background_rounded_border_button_veryfi_lens" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/veryfi_lens_dialog_yes_black_and_white" android:textAllCaps="false" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" android:paddingHorizontal="10.0dip" android:paddingVertical="6.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

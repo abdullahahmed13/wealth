@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageView_logo" android:contentDescription="@null" style="@style/AdyenCheckout.Image.Logo.Large" />
+    <TextView android:id="@id/textView_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AdyenCheckout.PayByBankUS.Title" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/recyclerView_brandList" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <TextView android:id="@id/textView_disclaimerHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AdyenCheckout.PayByBankUS.DisclaimerHeader" />
+    <TextView android:id="@id/textView_disclaimerBody" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/AdyenCheckout.PayByBankUS.DisclaimerBody" />
+</merge>

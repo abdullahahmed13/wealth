@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@null" android:id="@id/menu_delete" android:title="@string/veryfi_lens_delete" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_veryfi_lens_edit" android:id="@id/menu_edit" android:title="@string/veryfi_lens_edit" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_veryfi_lens_stitch" android:id="@id/menu_stitch" android:title="@string/veryfi_lens_delete" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_veryfi_lens_redo" android:id="@id/menu_redo" android:title="@string/veryfi_lens_delete" app:showAsAction="always" />
+</menu>

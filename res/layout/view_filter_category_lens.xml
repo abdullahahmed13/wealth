@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/veryfi_lens_search_bar_color_places" android:padding="@dimen/veryfi_lens_content_inset_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:textSize="@dimen/veryfi_lens_font_small" android:textColor="@color/veryfi_lens_color_sub_text" android:textColorHint="@color/veryfi_lens_color_sub_text" android:id="@id/text" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/veryfi_lens_hint_filter_list_by_category_name" android:lines="1" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionDone" />
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_veryfi_lens_search" />
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/settings_view_layout" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:paddingBottom="@dimen/veryfi_lens_content_inset_xlarge" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.google.android.material.card.MaterialCardView android:id="@id/features_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" app:cardCornerRadius="16.0dip" style="?materialCardViewElevatedStyle">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:background="?colorSurface" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textAppearance="?textAppearanceTitleMedium" android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/veryfi_lens_auto_pilot" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_veryfi_lens_document_capture" android:contentDescription="@string/veryfi_lens_content_description" />
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_auto_document_detect" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                            <Switch android:id="@id/switch_auto_document_detect_crop" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_veryfi_lens_blur" android:contentDescription="@string/veryfi_lens_content_description" />
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_auto_blur_detection" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                            <Switch android:id="@id/switch_auto_blur_detection" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_veryfi_lens_glare" android:contentDescription="@string/veryfi_lens_content_description" />
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_auto_glare_detection" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                            <Switch android:id="@id/switch_auto_glare_detection" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_veryfi_lens_auto_torch" android:contentDescription="@string/veryfi_lens_content_description" />
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_auto_light_detection" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                            <Switch android:id="@id/switch_auto_light_detection" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/auto_capture_layout" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_veryfi_lens_party_mode" android:contentDescription="@string/veryfi_lens_content_description" />
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_hands_free_capture" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                            <Switch android:id="@id/switch_hands_free" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/show_guide_layout" android:background="@drawable/background_linear_selector" android:paddingTop="8.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_veryfi_lens_info" android:contentDescription="@string/veryfi_lens_content_description" />
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_show_guide" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@id/import_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" app:cardCornerRadius="16.0dip" style="?materialCardViewElevatedStyle">
+                    <LinearLayout android:orientation="vertical" android:id="@id/browse_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:background="?colorSurface" android:paddingTop="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+                            <TextView android:textAppearance="?textAppearanceTitleMedium" android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/veryfi_lens_import" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_browse" android:background="@drawable/background_linear_selector" android:paddingTop="8.0dip" android:paddingBottom="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_veryfi_lens_folder" android:contentDescription="@string/veryfi_lens_content_description" />
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_browse" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@id/configuration_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" app:cardCornerRadius="16.0dip" style="?materialCardViewElevatedStyle">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:background="?colorSurface" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textAppearance="?textAppearanceTitleMedium" android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/veryfi_lens_configuration" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_veryfi_lens_backup" android:contentDescription="@string/veryfi_lens_content_description" />
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_back_up_gallery" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                            <Switch android:id="@id/switch_backup" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/after_scan_close_camera_container" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_veryfi_lens_no_photography" android:contentDescription="@string/veryfi_lens_content_description" />
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_after_scan_close" android:layout_weight="1.0" android:layout_marginStart="12.0dip" />
+                            <Switch android:id="@id/switch_after_close_camera" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:id="@id/collect_upfront_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" app:cardCornerRadius="16.0dip" style="?materialCardViewElevatedStyle">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:background="?colorSurface" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textAppearance="?textAppearanceTitleMedium" android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/veryfi_lens_collect_upfront_section" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_collect_category" android:layout_weight="1.0" />
+                            <Switch android:id="@id/switch_collect_category" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_collect_tags" android:layout_weight="1.0" />
+                            <Switch android:id="@id/switch_collect_tag" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_collect_projects" android:layout_weight="1.0" />
+                            <Switch android:id="@id/switch_collect_project" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_collect_cost_codes" android:layout_weight="1.0" />
+                            <Switch android:id="@id/switch_collect_cost_codes" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_collect_notes" android:layout_weight="1.0" />
+                            <Switch android:id="@id/switch_collect_notes" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?colorSurface" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="16.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/veryfi_lens_collect_external_id" android:layout_weight="1.0" />
+                            <Switch android:id="@id/switch_collect_external_id" android:paddingRight="-2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="-2.0dip" android:checked="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:textSize="12.0sp" android:layout_gravity="center_horizontal" android:id="@id/txt_veryfi_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/veryfi_lens_content_inset_medium" android:layout_marginBottom="@dimen/veryfi_lens_content_inset_medium" android:text="@string/veryfi_lens_version" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

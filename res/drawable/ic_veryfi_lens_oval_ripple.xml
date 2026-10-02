@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/color_veryfi_lens_selector_ripple"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:height="48.0dip" android:width="48.0dip">
+        <shape android:shape="oval">
+            <solid android:color="?android:colorBackground" />
+        </shape>
+    </item>
+</ripple>

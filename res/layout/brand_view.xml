@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.adyen.checkout.ui.core.internal.ui.view.RoundCornerImageView android:id="@id/imageView_singleBrand" android:layout_marginHorizontal="@dimen/brand_logo_single_item_horizontal_margin" android:layout_marginVertical="@dimen/standard_half_margin" app:adyenStrokeColor="@color/stroke_color" app:adyenStrokeWidth="0.0dip" style="@style/AdyenCheckout.Card.BrandRecognitionLogo" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/recyclerView_brandsList" android:padding="@dimen/standard_quarter_margin" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</merge>

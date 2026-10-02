@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_stitching" android:layout_width="100.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/card_view_stitching" android:visibility="visible" android:fadingEdgeLength="0.0dip" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" app:cardBackgroundColor="@color/veryfi_lens_black_50_transparent" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip">
+        <View android:layout_gravity="center" android:background="@color/veryfi_lens_white" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ScrollView android:id="@id/rl_preview_stitching" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv_preview_stitching" android:layout_width="fill_parent" android:layout_height="142.0dip" />
+            </ScrollView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

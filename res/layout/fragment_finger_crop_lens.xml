@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/top_app_bar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleCentered="true" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/image_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/btn_save_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+        <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="80.0dip" android:layout_marginBottom="40.0dip" />
+        <com.veryfi.lens.customviews.fingercropview.PaintCropView android:id="@id/paintCropView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="80.0dip" android:layout_marginBottom="40.0dip" />
+        <com.canhub.cropper.CropImageView android:id="@id/crop_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="80.0dip" android:layout_marginBottom="40.0dip" custom:cropAutoZoomEnabled="false" custom:cropBackgroundColor="@color/veryfi_lens_black_50_transparent" custom:cropBorderCornerOffset="0.0dip" custom:cropBorderCornerThickness="5.0dip" custom:cropBorderLineColor="@color/veryfi_lens_black_50_transparent" custom:cropBorderLineThickness="0.0dip" custom:cropShape="rectangle" xmlns:custom="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/btn_save_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/image_container">
+        <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_save" android:background="@drawable/background_rounded_border_button_veryfi_lens" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/veryfi_lens_menu_save" android:textAllCaps="false" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

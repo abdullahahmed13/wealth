@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/textView_modeSelection" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.PayTo.ModeSelectionTextView" />
+    <com.google.android.material.button.MaterialButtonToggleGroup android:id="@id/toggleButton_choice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" style="@style/AdyenCheckout.PayTo.ButtonToggleGroup">
+        <com.google.android.material.button.MaterialButton android:id="@id/button_toggle_payId" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/AdyenCheckout.PayTo.PayId.ToggleButton" />
+        <com.google.android.material.button.MaterialButton android:id="@id/button_toggle_bsb" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/AdyenCheckout.PayTo.BSB.ToggleButton" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_payId_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/textView_payId_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" android:layout_marginBottom="@dimen/standard_margin" style="@style/AdyenCheckout.PayTo.PayId.DescriptionTextView" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/textInputLayout_payId_type" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.DropdownTextInputLayout">
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:id="@id/autoCompleteTextView_payId_type" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/AdyenCheckout.DropdownTextInputEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/textInputLayout_payId_phone_number" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:expandedHintEnabled="false" app:prefixText="+61" style="@style/AdyenCheckout.TextInputLayout">
+            <com.adyen.checkout.ui.core.internal.ui.view.AdyenTextInputEditText android:id="@id/editText_payId_phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:autofillHints="phoneNational" style="@style/AdyenCheckout.PayTo.PayId.PhoneNumberEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/text_input_layout_pay_id_email_address" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.TextInputLayout">
+            <com.adyen.checkout.ui.core.internal.ui.view.AdyenTextInputEditText android:id="@id/edit_text_pay_id_email_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:autofillHints="emailAddress" style="@style/AdyenCheckout.PayTo.PayId.EmailAddressEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/text_input_layout_pay_id_abn_number" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.TextInputLayout">
+            <com.adyen.checkout.ui.core.internal.ui.view.AdyenTextInputEditText android:id="@id/edit_text_pay_id_abn_number" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.PayTo.PayId.AbnNumberEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/textInputLayout_payId_organizationId" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.TextInputLayout">
+            <com.adyen.checkout.ui.core.internal.ui.view.AdyenTextInputEditText android:id="@id/editText_payId_organizationId" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.PayTo.PayId.OrganizationIdEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_bsb_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/textView_bsb_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_margin" android:layout_marginBottom="@dimen/standard_margin" style="@style/AdyenCheckout.PayTo.BSB.DescriptionTextView" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/textInputLayout_bsb_state_branch" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.TextInputLayout">
+            <com.adyen.checkout.ui.core.internal.ui.view.AdyenTextInputEditText android:id="@id/editText_bsb_state_branch" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.PayTo.BSB.StateBranchEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/textInputLayout_bsb_account_number" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.TextInputLayout">
+            <com.adyen.checkout.ui.core.internal.ui.view.AdyenTextInputEditText android:id="@id/editText_bsb_account_number" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.PayTo.BSB.AccountNumberEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/textInputLayout_first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.TextInputLayout">
+        <com.adyen.checkout.ui.core.internal.ui.view.AdyenTextInputEditText android:id="@id/editText_first_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:autofillHints="personGivenName" style="@style/AdyenCheckout.PayTo.FirstNameEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/textInputLayout_last_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AdyenCheckout.TextInputLayout">
+        <com.adyen.checkout.ui.core.internal.ui.view.AdyenTextInputEditText android:id="@id/editText_last_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:autofillHints="personFamilyName" style="@style/AdyenCheckout.PayTo.LastNameEditText" />
+    </com.google.android.material.textfield.TextInputLayout>
+</merge>

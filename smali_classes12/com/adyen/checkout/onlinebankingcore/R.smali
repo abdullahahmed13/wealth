@@ -1,0 +1,25 @@
+.class public final Lcom/adyen/checkout/onlinebankingcore/R;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/adyen/checkout/onlinebankingcore/R$color;,
+        Lcom/adyen/checkout/onlinebankingcore/R$dimen;,
+        Lcom/adyen/checkout/onlinebankingcore/R$id;,
+        Lcom/adyen/checkout/onlinebankingcore/R$layout;,
+        Lcom/adyen/checkout/onlinebankingcore/R$string;,
+        Lcom/adyen/checkout/onlinebankingcore/R$style;
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView android:id="@id/lottie_view" android:layout_width="fill_parent" android:layout_height="200.0dip" app:lottie_autoPlay="true" app:lottie_enableMergePathsForKitKatAndAbove="true" app:lottie_loop="true" />
+    <TextView android:textAppearance="@style/TextAppearance.Material3.BodyMedium" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" android:maxLines="6" android:layout_marginHorizontal="24.0dip" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/toolbar_layout" android:background="?colorSecondaryContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" app:title="Extra data" app:titleCentered="true" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:padding="@dimen/veryfi_lens_content_inset_small" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/veryfi_lens_content_inset_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/edit_text_notes_lyt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/veryfi_lens_content_inset_medium" android:hint="@string/veryfi_lens_hint_notes_scanner" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/edit_text_notes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="100" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/edit_external_id_lyt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/veryfi_lens_content_inset_medium" android:hint="@string/veryfi_lens_hint_external_id" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/edit_external_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:id="@id/btn_extra_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="@dimen/veryfi_lens_content_inset_medium" android:layout_marginRight="50.0dip" android:text="@string/veryfi_lens_add_extra_data_scanner" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

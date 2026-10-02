@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_manual_stitching_counter" android:title="@string/veryfi_lens_manual_stitching_counter_text" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_veryfi_lens_rotate_right" android:id="@id/menu_rotate" android:title="@string/veryfi_lens_rotate" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_veryfi_lens_crop" android:id="@id/menu_edit" android:title="@string/veryfi_lens_crop" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_veryfi_lens_delete" android:id="@id/menu_delete" android:title="@string/veryfi_lens_delete" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_veryfi_lens_stitch" android:id="@id/menu_stitch" android:title="@string/veryfi_lens_stitch" app:showAsAction="always" />
+    <item android:id="@id/menu_stitch_title" android:title="@string/veryfi_lens_stitching_add_more" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_veryfi_lens_undo" android:id="@id/menu_redo" android:title="@string/veryfi_lens_undo" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_veryfi_lens_logs" android:id="@id/menu_logs" android:visible="false" android:title="@string/veryfi_lens_sending_email" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_veryfi_lens_magic" android:id="@id/menu_magic" android:visible="false" android:title="@string/veryfi_lens_geometric_correction" app:showAsAction="always" />
+</menu>

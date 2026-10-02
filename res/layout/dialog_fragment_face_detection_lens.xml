@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/dialog_view_layout" android:padding="@dimen/veryfi_lens_content_inset_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/veryfi_lens_content_inset_large" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/face_detected_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/veryfi_lens_crop_confirm_fragment_face_detected_text" android:textAlignment="center" style="@style/VeryfiLensDialogTitle" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <Button android:id="@id/try_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/veryfi_lens_crop_confirm_fragment_document_detected_try_again" android:layout_marginEnd="4.0dip" android:paddingHorizontal="16.0dip" style="@style/Widget.Material3.Button.OutlinedButton" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

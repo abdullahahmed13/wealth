@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_upload" android:visible="false" android:title="@string/veryfi_lens_upload" />
+    <item android:id="@id/menu_dictate" android:title="@string/veryfi_lens_manual_entry" />
+    <item android:id="@id/menu_gallery" android:title="@string/veryfi_lens_gallery" />
+</menu>

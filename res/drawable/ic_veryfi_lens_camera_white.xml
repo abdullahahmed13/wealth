@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/camera">
+        <shape android:shape="oval">
+            <stroke android:width="10.0dip" android:color="@android:color/transparent" />
+            <solid android:color="@color/veryfi_lens_white" />
+            <size android:height="52.0dip" android:width="52.0dip" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_document_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/veryfi_lens_font_small" android:textColor="@color/veryfi_lens_white" android:gravity="center" android:id="@id/txt_document_type" android:paddingBottom="@dimen/veryfi_lens_content_inset_xxsmall" android:layout_width="wrap_content" android:layout_height="35.0dip" android:minWidth="80.0dip" android:paddingHorizontal="@dimen/veryfi_lens_content_inset_small" />
+</RelativeLayout>
