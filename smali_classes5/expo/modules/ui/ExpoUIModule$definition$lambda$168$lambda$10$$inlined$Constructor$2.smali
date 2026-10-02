@@ -1,0 +1,95 @@
+.class public final Lexpo/modules/ui/ExpoUIModule$definition$lambda$168$lambda$10$$inlined$Constructor$2;
+.super Ljava/lang/Object;
+.source "ClassComponentBuilder.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lexpo/modules/ui/ExpoUIModule;->definition()Lexpo/modules/kotlin/modules/ModuleDefinitionData;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkotlin/jvm/functions/Function1<",
+        "[",
+        "Ljava/lang/Object;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nClassComponentBuilder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClassComponentBuilder.kt\nexpo/modules/kotlin/classcomponent/ClassComponentBuilder$Constructor$3\n+ 2 EnforceType.kt\nexpo/modules/kotlin/types/EnforceTypeKt\n+ 3 ExpoUIModule.kt\nexpo/modules/ui/ExpoUIModule\n*L\n1#1,549:1\n11#2:550\n89#3:551\n*S KotlinDebug\n*F\n+ 1 ClassComponentBuilder.kt\nexpo/modules/kotlin/classcomponent/ClassComponentBuilder$Constructor$3\n*L\n116#1:550\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 118
+    check-cast p1, [Ljava/lang/Object;
+
+    invoke-virtual {p0, p1}, Lexpo/modules/ui/ExpoUIModule$definition$lambda$168$lambda$10$$inlined$Constructor$2;->invoke([Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke([Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    const-string v0, "<destruct>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    aget-object p1, p1, v0
+
+    .line 117
+    check-cast p1, Ljava/util/Map;
+
+    .line 551
+    new-instance v0, Lexpo/modules/ui/state/ObservableState;
+
+    const-string/jumbo v1, "value"
+
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Lexpo/modules/ui/state/ObservableState;-><init>(Ljava/lang/Object;)V
+
+    return-object v0
+.end method

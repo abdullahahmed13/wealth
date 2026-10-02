@@ -1,0 +1,111 @@
+.class public final Lio/sentry/metrics/NoOpMetricsApi;
+.super Ljava/lang/Object;
+.source "NoOpMetricsApi.java"
+
+# interfaces
+.implements Lio/sentry/metrics/IMetricsApi;
+
+
+# static fields
+.field private static final instance:Lio/sentry/metrics/NoOpMetricsApi;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 7
+    new-instance v0, Lio/sentry/metrics/NoOpMetricsApi;
+
+    invoke-direct {v0}, Lio/sentry/metrics/NoOpMetricsApi;-><init>()V
+
+    sput-object v0, Lio/sentry/metrics/NoOpMetricsApi;->instance:Lio/sentry/metrics/NoOpMetricsApi;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static getInstance()Lio/sentry/metrics/NoOpMetricsApi;
+    .locals 1
+
+    .line 12
+    sget-object v0, Lio/sentry/metrics/NoOpMetricsApi;->instance:Lio/sentry/metrics/NoOpMetricsApi;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public count(Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public count(Ljava/lang/String;Ljava/lang/Double;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public count(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public count(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;Lio/sentry/metrics/SentryMetricsParameters;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public count(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public distribution(Ljava/lang/String;Ljava/lang/Double;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public distribution(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public distribution(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;Lio/sentry/metrics/SentryMetricsParameters;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public gauge(Ljava/lang/String;Ljava/lang/Double;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public gauge(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public gauge(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;Lio/sentry/metrics/SentryMetricsParameters;)V
+    .locals 0
+
+    return-void
+.end method
