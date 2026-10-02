@@ -1,0 +1,133 @@
+.class public final Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/BitmapController;
+.super Ljava/lang/Object;
+.source "BitmapController.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u0011\u0012\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005R\u0016\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0019\u0010\u0008\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\t\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR(\u0010\u000c\u001a\u0004\u0018\u00010\u00032\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u00038F@FX\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\r\u0010\u000e\"\u0004\u0008\u000f\u0010\u0005\u00a8\u0006\u0010"
+    }
+    d2 = {
+        "Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/BitmapController;",
+        "",
+        "initialValue",
+        "Landroid/graphics/Bitmap;",
+        "<init>",
+        "(Landroid/graphics/Bitmap;)V",
+        "_bitmapValue",
+        "Lkotlinx/coroutines/flow/MutableStateFlow;",
+        "onChanged",
+        "Lkotlinx/coroutines/flow/Flow;",
+        "getOnChanged",
+        "()Lkotlinx/coroutines/flow/Flow;",
+        "value",
+        "getValue",
+        "()Landroid/graphics/Bitmap;",
+        "setValue",
+        "ui-step-renderer_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final _bitmapValue:Lkotlinx/coroutines/flow/MutableStateFlow;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlinx/coroutines/flow/MutableStateFlow<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final onChanged:Lkotlinx/coroutines/flow/Flow;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlinx/coroutines/flow/Flow<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Landroid/graphics/Bitmap;)V
+    .locals 1
+
+    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 14
+    invoke-static {p1}, Lkotlinx/coroutines/flow/StateFlowKt;->MutableStateFlow(Ljava/lang/Object;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/BitmapController;->_bitmapValue:Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    .line 16
+    check-cast p1, Lkotlinx/coroutines/flow/Flow;
+
+    const/4 v0, 0x1
+
+    invoke-static {p1, v0}, Lkotlinx/coroutines/flow/FlowKt;->drop(Lkotlinx/coroutines/flow/Flow;I)Lkotlinx/coroutines/flow/Flow;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/BitmapController;->onChanged:Lkotlinx/coroutines/flow/Flow;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getOnChanged()Lkotlinx/coroutines/flow/Flow;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlinx/coroutines/flow/Flow<",
+            "Landroid/graphics/Bitmap;",
+            ">;"
+        }
+    .end annotation
+
+    .line 16
+    iget-object v0, p0, Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/BitmapController;->onChanged:Lkotlinx/coroutines/flow/Flow;
+
+    return-object v0
+.end method
+
+.method public final getValue()Landroid/graphics/Bitmap;
+    .locals 1
+
+    .line 19
+    iget-object v0, p0, Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/BitmapController;->_bitmapValue:Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    invoke-interface {v0}, Lkotlinx/coroutines/flow/MutableStateFlow;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/graphics/Bitmap;
+
+    return-object v0
+.end method
+
+.method public final setValue(Landroid/graphics/Bitmap;)V
+    .locals 1
+
+    .line 21
+    iget-object v0, p0, Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/BitmapController;->_bitmapValue:Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    invoke-interface {v0, p1}, Lkotlinx/coroutines/flow/MutableStateFlow;->setValue(Ljava/lang/Object;)V
+
+    return-void
+.end method

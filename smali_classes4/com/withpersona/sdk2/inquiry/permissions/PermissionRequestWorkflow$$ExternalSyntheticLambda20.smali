@@ -1,0 +1,50 @@
+.class public final synthetic Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$$ExternalSyntheticLambda20;
+.super Ljava/lang/Object;
+.source "D8$$SyntheticClass"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow;
+
+.field public final synthetic f$1:Lcom/squareup/workflow1/StatefulWorkflow$RenderContext;
+
+.field public final synthetic f$2:Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$Props;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow;Lcom/squareup/workflow1/StatefulWorkflow$RenderContext;Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$Props;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$$ExternalSyntheticLambda20;->f$0:Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow;
+
+    iput-object p2, p0, Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$$ExternalSyntheticLambda20;->f$1:Lcom/squareup/workflow1/StatefulWorkflow$RenderContext;
+
+    iput-object p3, p0, Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$$ExternalSyntheticLambda20;->f$2:Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$Props;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 3
+
+    .line 0
+    iget-object v0, p0, Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$$ExternalSyntheticLambda20;->f$0:Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow;
+
+    iget-object v1, p0, Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$$ExternalSyntheticLambda20;->f$1:Lcom/squareup/workflow1/StatefulWorkflow$RenderContext;
+
+    iget-object v2, p0, Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$$ExternalSyntheticLambda20;->f$2:Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$Props;
+
+    invoke-static {v0, v1, v2}, Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow;->$r8$lambda$bu6H1XilpJp4G9y0wmSE80rw1aA(Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow;Lcom/squareup/workflow1/StatefulWorkflow$RenderContext;Lcom/withpersona/sdk2/inquiry/permissions/PermissionRequestWorkflow$Props;)Lkotlin/Unit;
+
+    move-result-object v0
+
+    return-object v0
+.end method

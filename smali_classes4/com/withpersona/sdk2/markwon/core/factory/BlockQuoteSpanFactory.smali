@@ -1,0 +1,34 @@
+.class public Lcom/withpersona/sdk2/markwon/core/factory/BlockQuoteSpanFactory;
+.super Ljava/lang/Object;
+.source "BlockQuoteSpanFactory.java"
+
+# interfaces
+.implements Lcom/withpersona/sdk2/markwon/SpanFactory;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getSpans(Lcom/withpersona/sdk2/markwon/MarkwonConfiguration;Lcom/withpersona/sdk2/markwon/RenderProps;)Ljava/lang/Object;
+    .locals 0
+
+    .line 15
+    new-instance p2, Lcom/withpersona/sdk2/markwon/core/spans/BlockQuoteSpan;
+
+    invoke-virtual {p1}, Lcom/withpersona/sdk2/markwon/MarkwonConfiguration;->theme()Lcom/withpersona/sdk2/markwon/core/MarkwonTheme;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Lcom/withpersona/sdk2/markwon/core/spans/BlockQuoteSpan;-><init>(Lcom/withpersona/sdk2/markwon/core/MarkwonTheme;)V
+
+    return-object p2
+.end method

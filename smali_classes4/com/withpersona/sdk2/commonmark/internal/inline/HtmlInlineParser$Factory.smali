@@ -1,0 +1,66 @@
+.class public Lcom/withpersona/sdk2/commonmark/internal/inline/HtmlInlineParser$Factory;
+.super Ljava/lang/Object;
+.source "HtmlInlineParser.java"
+
+# interfaces
+.implements Lcom/withpersona/sdk2/commonmark/parser/beta/InlineContentParserFactory;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/withpersona/sdk2/commonmark/internal/inline/HtmlInlineParser;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "Factory"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 205
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public create()Lcom/withpersona/sdk2/commonmark/parser/beta/InlineContentParser;
+    .locals 1
+
+    .line 214
+    new-instance v0, Lcom/withpersona/sdk2/commonmark/internal/inline/HtmlInlineParser;
+
+    invoke-direct {v0}, Lcom/withpersona/sdk2/commonmark/internal/inline/HtmlInlineParser;-><init>()V
+
+    return-object v0
+.end method
+
+.method public getTriggerCharacters()Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Ljava/lang/Character;",
+            ">;"
+        }
+    .end annotation
+
+    const/16 v0, 0x3c
+
+    .line 209
+    invoke-static {v0}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroidx/media3/datasource/HttpUtil$$ExternalSyntheticBackport0;->m(Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object v0
+
+    return-object v0
+.end method

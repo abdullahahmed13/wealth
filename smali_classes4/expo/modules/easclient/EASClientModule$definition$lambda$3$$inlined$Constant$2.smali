@@ -1,0 +1,95 @@
+.class public final Lexpo/modules/easclient/EASClientModule$definition$lambda$3$$inlined$Constant$2;
+.super Ljava/lang/Object;
+.source "ConstantComponentBuilder.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lexpo/modules/easclient/EASClientModule;->definition()Lexpo/modules/kotlin/modules/ModuleDefinitionData;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Ljava/lang/Double;",
+        ">;"
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nConstantComponentBuilder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ConstantComponentBuilder.kt\nexpo/modules/kotlin/objects/ObjectDefinitionBuilder$Constant$lambda$46$$inlined$get$1\n+ 2 EASClientModule.kt\nexpo/modules/easclient/EASClientModule\n*L\n1#1,12:1\n17#2:13\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lexpo/modules/easclient/EASClientModule;
+
+
+# direct methods
+.method public constructor <init>(Lexpo/modules/easclient/EASClientModule;)V
+    .locals 0
+
+    iput-object p1, p0, Lexpo/modules/easclient/EASClientModule$definition$lambda$3$$inlined$Constant$2;->this$0:Lexpo/modules/easclient/EASClientModule;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Double;"
+        }
+    .end annotation
+
+    .line 13
+    sget-object v0, Lexpo/modules/easclient/EASClientID;->Companion:Lexpo/modules/easclient/EASClientID$Companion;
+
+    new-instance v1, Lexpo/modules/easclient/EASClientID;
+
+    iget-object v2, p0, Lexpo/modules/easclient/EASClientModule$definition$lambda$3$$inlined$Constant$2;->this$0:Lexpo/modules/easclient/EASClientModule;
+
+    invoke-static {v2}, Lexpo/modules/easclient/EASClientModule;->access$getContext(Lexpo/modules/easclient/EASClientModule;)Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Lexpo/modules/easclient/EASClientID;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v1}, Lexpo/modules/easclient/EASClientID;->getUuid()Ljava/util/UUID;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lexpo/modules/easclient/EASClientID$Companion;->deterministicUniformValue(Ljava/util/UUID;)D
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object v0
+
+    return-object v0
+.end method

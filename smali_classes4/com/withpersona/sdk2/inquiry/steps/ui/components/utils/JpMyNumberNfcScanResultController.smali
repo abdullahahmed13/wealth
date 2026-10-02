@@ -1,0 +1,133 @@
+.class public final Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/JpMyNumberNfcScanResultController;
+.super Ljava/lang/Object;
+.source "JpMyNumberNfcScanResultController.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u0011\u0012\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005R\u0016\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0019\u0010\u0008\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\t\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR(\u0010\u000c\u001a\u0004\u0018\u00010\u00032\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u00038F@FX\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\r\u0010\u000e\"\u0004\u0008\u000f\u0010\u0005\u00a8\u0006\u0010"
+    }
+    d2 = {
+        "Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/JpMyNumberNfcScanResultController;",
+        "",
+        "initialValue",
+        "Lcom/withpersona/sdk2/inquiry/jpmynumber/JpMyNumberNfcScanResult;",
+        "<init>",
+        "(Lcom/withpersona/sdk2/inquiry/jpmynumber/JpMyNumberNfcScanResult;)V",
+        "_scanResult",
+        "Lkotlinx/coroutines/flow/MutableStateFlow;",
+        "onChanged",
+        "Lkotlinx/coroutines/flow/Flow;",
+        "getOnChanged",
+        "()Lkotlinx/coroutines/flow/Flow;",
+        "value",
+        "getValue",
+        "()Lcom/withpersona/sdk2/inquiry/jpmynumber/JpMyNumberNfcScanResult;",
+        "setValue",
+        "ui-step-renderer_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private final _scanResult:Lkotlinx/coroutines/flow/MutableStateFlow;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlinx/coroutines/flow/MutableStateFlow<",
+            "Lcom/withpersona/sdk2/inquiry/jpmynumber/JpMyNumberNfcScanResult;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final onChanged:Lkotlinx/coroutines/flow/Flow;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlinx/coroutines/flow/Flow<",
+            "Lcom/withpersona/sdk2/inquiry/jpmynumber/JpMyNumberNfcScanResult;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lcom/withpersona/sdk2/inquiry/jpmynumber/JpMyNumberNfcScanResult;)V
+    .locals 1
+
+    .line 14
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 18
+    invoke-static {p1}, Lkotlinx/coroutines/flow/StateFlowKt;->MutableStateFlow(Ljava/lang/Object;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/JpMyNumberNfcScanResultController;->_scanResult:Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    .line 20
+    check-cast p1, Lkotlinx/coroutines/flow/Flow;
+
+    const/4 v0, 0x1
+
+    invoke-static {p1, v0}, Lkotlinx/coroutines/flow/FlowKt;->drop(Lkotlinx/coroutines/flow/Flow;I)Lkotlinx/coroutines/flow/Flow;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/JpMyNumberNfcScanResultController;->onChanged:Lkotlinx/coroutines/flow/Flow;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getOnChanged()Lkotlinx/coroutines/flow/Flow;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlinx/coroutines/flow/Flow<",
+            "Lcom/withpersona/sdk2/inquiry/jpmynumber/JpMyNumberNfcScanResult;",
+            ">;"
+        }
+    .end annotation
+
+    .line 20
+    iget-object v0, p0, Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/JpMyNumberNfcScanResultController;->onChanged:Lkotlinx/coroutines/flow/Flow;
+
+    return-object v0
+.end method
+
+.method public final getValue()Lcom/withpersona/sdk2/inquiry/jpmynumber/JpMyNumberNfcScanResult;
+    .locals 1
+
+    .line 23
+    iget-object v0, p0, Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/JpMyNumberNfcScanResultController;->_scanResult:Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    invoke-interface {v0}, Lkotlinx/coroutines/flow/MutableStateFlow;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/withpersona/sdk2/inquiry/jpmynumber/JpMyNumberNfcScanResult;
+
+    return-object v0
+.end method
+
+.method public final setValue(Lcom/withpersona/sdk2/inquiry/jpmynumber/JpMyNumberNfcScanResult;)V
+    .locals 1
+
+    .line 25
+    iget-object v0, p0, Lcom/withpersona/sdk2/inquiry/steps/ui/components/utils/JpMyNumberNfcScanResultController;->_scanResult:Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    invoke-interface {v0, p1}, Lkotlinx/coroutines/flow/MutableStateFlow;->setValue(Ljava/lang/Object;)V
+
+    return-void
+.end method

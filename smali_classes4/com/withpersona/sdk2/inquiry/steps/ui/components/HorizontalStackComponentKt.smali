@@ -1,0 +1,396 @@
+.class public final Lcom/withpersona/sdk2/inquiry/steps/ui/components/HorizontalStackComponentKt;
+.super Ljava/lang/Object;
+.source "HorizontalStackComponent.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nHorizontalStackComponent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 HorizontalStackComponent.kt\ncom/withpersona/sdk2/inquiry/steps/ui/components/HorizontalStackComponentKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,85:1\n1#2:86\n1563#3:87\n1634#3,3:88\n*S KotlinDebug\n*F\n+ 1 HorizontalStackComponent.kt\ncom/withpersona/sdk2/inquiry/steps/ui/components/HorizontalStackComponentKt\n*L\n48#1:87\n48#1:88,3\n*E\n"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000(\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a6\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u00042\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00070\u00062\u000c\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\t0\u00062\u0006\u0010\n\u001a\u00020\u000b\u00a8\u0006\u000c"
+    }
+    d2 = {
+        "makeView",
+        "Landroidx/constraintlayout/widget/ConstraintLayout;",
+        "Lcom/withpersona/sdk2/inquiry/steps/ui/components/HorizontalStackComponent;",
+        "uiComponentHelper",
+        "Lcom/withpersona/sdk2/inquiry/steps/ui/components/UiComponentHelper;",
+        "componentViews",
+        "",
+        "Lcom/withpersona/sdk2/inquiry/steps/ui/ComponentView;",
+        "children",
+        "Landroid/view/View;",
+        "config",
+        "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack;",
+        "ui-step-renderer_release"
+    }
+    k = 0x2
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public static synthetic $r8$lambda$Q5z9G3tK8w0GO8gNWzTv0tuIPew(Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/withpersona/sdk2/inquiry/steps/ui/components/HorizontalStackComponentKt;->makeView$lambda$3$lambda$2(Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final makeView(Lcom/withpersona/sdk2/inquiry/steps/ui/components/HorizontalStackComponent;Lcom/withpersona/sdk2/inquiry/steps/ui/components/UiComponentHelper;Ljava/util/List;Ljava/util/List;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack;)Landroidx/constraintlayout/widget/ConstraintLayout;
+    .locals 10
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/withpersona/sdk2/inquiry/steps/ui/components/HorizontalStackComponent;",
+            "Lcom/withpersona/sdk2/inquiry/steps/ui/components/UiComponentHelper;",
+            "Ljava/util/List<",
+            "Lcom/withpersona/sdk2/inquiry/steps/ui/ComponentView;",
+            ">;",
+            "Ljava/util/List<",
+            "+",
+            "Landroid/view/View;",
+            ">;",
+            "Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack;",
+            ")",
+            "Landroidx/constraintlayout/widget/ConstraintLayout;"
+        }
+    .end annotation
+
+    const-string v0, "<this>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "uiComponentHelper"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "componentViews"
+
+    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "children"
+
+    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "config"
+
+    invoke-static {p4, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 46
+    invoke-virtual {p1}, Lcom/withpersona/sdk2/inquiry/steps/ui/components/UiComponentHelper;->getLayoutInflater()Landroid/view/LayoutInflater;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;->inflate(Landroid/view/LayoutInflater;)Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;
+
+    move-result-object p0
+
+    .line 47
+    new-instance v1, Landroidx/constraintlayout/widget/ConstraintSet;
+
+    invoke-direct {v1}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
+
+    invoke-virtual {p0}, Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;->getRoot()Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+
+    .line 48
+    check-cast p3, Ljava/lang/Iterable;
+
+    .line 87
+    new-instance v0, Ljava/util/ArrayList;
+
+    const/16 v2, 0xa
+
+    invoke-static {p3, v2}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
+
+    move-result v2
+
+    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    check-cast v0, Ljava/util/Collection;
+
+    .line 88
+    invoke-interface {p3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p3
+
+    :goto_0
+    invoke-interface {p3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {p3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 89
+    check-cast v2, Landroid/view/View;
+
+    .line 49
+    invoke-static {}, Landroid/view/View;->generateViewId()I
+
+    move-result v3
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->setId(I)V
+
+    const/4 v3, 0x0
+
+    .line 50
+    invoke-virtual {v2, v3}, Landroid/view/View;->setSaveEnabled(Z)V
+
+    .line 51
+    invoke-virtual {p0}, Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;->getRoot()Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Landroidx/constraintlayout/widget/ConstraintLayout;->addView(Landroid/view/View;)V
+
+    .line 52
+    invoke-virtual {v2}, Landroid/view/View;->getId()I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    .line 89
+    invoke-interface {v0, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 90
+    :cond_0
+    move-object v3, v0
+
+    check-cast v3, Ljava/util/List;
+
+    .line 54
+    invoke-virtual {p4}, Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack;->getStyles()Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;
+
+    move-result-object p3
+
+    if-eqz p3, :cond_1
+
+    .line 55
+    invoke-virtual {p3}, Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;->getGapValue()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$Size;
+
+    move-result-object p4
+
+    if-eqz p4, :cond_1
+
+    invoke-interface {p4}, Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$Size;->getDp()Ljava/lang/Double;
+
+    move-result-object p4
+
+    if-eqz p4, :cond_1
+
+    invoke-virtual {p4}, Ljava/lang/Double;->doubleValue()D
+
+    move-result-wide v4
+
+    goto :goto_1
+
+    :cond_1
+    const-wide/high16 v4, 0x4030000000000000L    # 16.0
+
+    :goto_1
+    invoke-static {v4, v5}, Lcom/withpersona/sdk2/inquiry/shared/ExtensionsKt;->getDpToPx(D)D
+
+    move-result-wide v4
+
+    double-to-int p4, v4
+
+    move v6, p4
+
+    if-eqz p3, :cond_2
+
+    .line 56
+    invoke-virtual {p3}, Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;->getAxisValue()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$Axis;
+
+    move-result-object p4
+
+    if-nez p4, :cond_3
+
+    :cond_2
+    sget-object p4, Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$Axis;->HORIZONTAL:Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$Axis;
+
+    :cond_3
+    sget-object v0, Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$Axis;->HORIZONTAL:Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$Axis;
+
+    const-string v8, "getRoot(...)"
+
+    const/4 v2, 0x0
+
+    if-ne p4, v0, :cond_7
+
+    .line 58
+    invoke-virtual {p0}, Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;->getRoot()Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-result-object p4
+
+    invoke-static {p4, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    move-object v0, p4
+
+    check-cast v0, Landroid/view/ViewGroup;
+
+    if-eqz p3, :cond_4
+
+    .line 62
+    invoke-virtual {p3}, Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;->getChildSizesValue()[I
+
+    move-result-object p4
+
+    move-object v4, p4
+
+    goto :goto_2
+
+    :cond_4
+    move-object v4, v2
+
+    :goto_2
+    if-eqz p3, :cond_5
+
+    .line 63
+    invoke-virtual {p3}, Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;->getAlignmentValue()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$PositionType;
+
+    move-result-object p4
+
+    move-object v5, p4
+
+    goto :goto_3
+
+    :cond_5
+    move-object v5, v2
+
+    :goto_3
+    if-eqz p3, :cond_6
+
+    .line 64
+    invoke-virtual {p3}, Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;->getJustifyValue()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$PositionType;
+
+    move-result-object v2
+
+    :cond_6
+    move v7, v6
+
+    move-object v6, v2
+
+    move-object v2, p2
+
+    .line 57
+    invoke-static/range {v0 .. v7}, Lcom/withpersona/sdk2/inquiry/steps/ui/components/StacksKt;->setupHorizontalStack(Landroid/view/ViewGroup;Landroidx/constraintlayout/widget/ConstraintSet;Ljava/util/List;Ljava/util/List;[ILcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$PositionType;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$PositionType;I)V
+
+    goto :goto_5
+
+    :cond_7
+    move-object v9, v2
+
+    move-object v2, p2
+
+    move-object p2, v9
+
+    .line 69
+    invoke-virtual {p0}, Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;->getRoot()Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-result-object p4
+
+    invoke-static {p4, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    move-object v0, p4
+
+    check-cast v0, Landroid/view/ViewGroup;
+
+    if-eqz p3, :cond_8
+
+    .line 73
+    invoke-virtual {p3}, Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;->getAlignmentValue()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$PositionType;
+
+    move-result-object p4
+
+    move-object v4, p4
+
+    goto :goto_4
+
+    :cond_8
+    move-object v4, p2
+
+    :goto_4
+    if-eqz p3, :cond_9
+
+    .line 74
+    invoke-virtual {p3}, Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;->getJustifyValue()Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$PositionType;
+
+    move-result-object p2
+
+    :cond_9
+    move-object v5, p2
+
+    .line 68
+    invoke-static/range {v0 .. v6}, Lcom/withpersona/sdk2/inquiry/steps/ui/components/StacksKt;->setupVerticalStack(Landroid/view/ViewGroup;Landroidx/constraintlayout/widget/ConstraintSet;Ljava/util/List;Ljava/util/List;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$PositionType;Lcom/withpersona/sdk2/inquiry/network/dto/ui/styling/StyleElements$PositionType;I)V
+
+    :goto_5
+    if-eqz p3, :cond_a
+
+    .line 79
+    new-instance p2, Lcom/withpersona/sdk2/inquiry/steps/ui/components/HorizontalStackComponentKt$$ExternalSyntheticLambda0;
+
+    invoke-direct {p2, p0, p3}, Lcom/withpersona/sdk2/inquiry/steps/ui/components/HorizontalStackComponentKt$$ExternalSyntheticLambda0;-><init>(Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;)V
+
+    invoke-virtual {p1, p2}, Lcom/withpersona/sdk2/inquiry/steps/ui/components/UiComponentHelper;->registerOnLayoutListener(Lkotlin/jvm/functions/Function0;)V
+
+    .line 84
+    :cond_a
+    invoke-virtual {p0}, Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;->getRoot()Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+
+    .line 85
+    invoke-virtual {p0}, Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;->getRoot()Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-result-object p0
+
+    invoke-static {p0, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method private static final makeView$lambda$3$lambda$2(Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;)Lkotlin/Unit;
+    .locals 1
+
+    .line 80
+    invoke-virtual {p0}, Lcom/withpersona/sdk2/inquiry/steps/ui/databinding/Pi2UiHorizontalStackBinding;->getRoot()Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    move-result-object p0
+
+    const-string v0, "getRoot(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p0, p1}, Lcom/withpersona/sdk2/inquiry/steps/ui/styling/StackStylingKt;->applyBaseStackStyles(Landroidx/constraintlayout/widget/ConstraintLayout;Lcom/withpersona/sdk2/inquiry/network/dto/ui/components/HorizontalStack$HorizontalStackComponentStyle;)V
+
+    .line 81
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method

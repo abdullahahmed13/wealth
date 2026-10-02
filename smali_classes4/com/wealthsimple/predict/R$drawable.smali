@@ -1,0 +1,119 @@
+.class public final Lcom/wealthsimple/predict/R$drawable;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/wealthsimple/predict/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "drawable"
+.end annotation
+
+
+# static fields
+.field public static ___libs_all_creditcards_core_src_assets_metallicpilltexture:I = 0x7f08002a
+
+.field public static ___libs_all_privacybalancewrapper_mobile_src_assets_privacymask5dark:I = 0x7f08002b
+
+.field public static ___libs_all_privacybalancewrapper_mobile_src_assets_privacymask5light:I = 0x7f08002c
+
+.field public static ___libs_all_privacybalancewrapper_mobile_src_assets_privacymask6dark:I = 0x7f08002d
+
+.field public static ___libs_all_privacybalancewrapper_mobile_src_assets_privacymask6light:I = 0x7f08002e
+
+.field public static ___libs_all_uiassets_mobile_src_images_autoinvestloop:I = 0x7f08002f
+
+.field public static ___libs_all_uiassets_mobile_src_images_cashdelivery:I = 0x7f080030
+
+.field public static ___libs_all_uiassets_mobile_src_images_cashdeposits3d:I = 0x7f080031
+
+.field public static ___libs_all_uiassets_mobile_src_images_error:I = 0x7f080032
+
+.field public static ___libs_all_uiassets_mobile_src_images_goldvaultclosedlarge:I = 0x7f080033
+
+.field public static ___libs_all_uiassets_mobile_src_images_gradientpremiumdark:I = 0x7f080034
+
+.field public static ___libs_all_uiassets_mobile_src_images_gradientpremiumlight:I = 0x7f080035
+
+.field public static ___libs_all_uiassets_mobile_src_images_paperplaneandcoins2025:I = 0x7f080036
+
+.field public static ___libs_all_uiassets_mobile_src_images_percentonlysmallstack:I = 0x7f080037
+
+.field public static ___libs_all_uiassets_mobile_src_images_rainbowdonutchart:I = 0x7f080038
+
+.field public static ___libs_all_uiassets_mobile_src_images_stocktrading01:I = 0x7f080039
+
+.field public static ___libs_all_uiassets_mobile_src_images_stocktrading03:I = 0x7f08003a
+
+.field public static ___libs_all_uiassets_mobile_src_images_unifiedpartsen:I = 0x7f08003b
+
+.field public static ___libs_all_uiassets_mobile_src_images_unifiedpartsfr:I = 0x7f08003c
+
+.field public static ___libs_all_uiassets_mobile_src_images_unifiedpartssmallen:I = 0x7f08003d
+
+.field public static ___libs_all_uiassets_mobile_src_images_unifiedpartssmallfr:I = 0x7f08003e
+
+.field public static ___libs_all_uiassets_mobile_src_images_visacreditcardangled:I = 0x7f08003f
+
+.field public static ___libs_all_uiassets_mobile_src_imagesdomain_coinspinneratlas:I = 0x7f080040
+
+.field public static ___libs_all_uiassets_mobile_src_imagesdomain_coinspinnerframe0:I = 0x7f080041
+
+.field public static ___libs_all_uiassets_mobile_src_imagesdomain_coinspinnerpreciousmetalsatlas:I = 0x7f080042
+
+.field public static ___libs_all_uiassets_mobile_src_imagesdomain_coinspinnerpreciousmetalsframe0:I = 0x7f080043
+
+.field public static ___libs_all_uiassets_mobile_src_imagesdomain_connectaccounts:I = 0x7f080044
+
+.field public static ___libs_all_uiassets_mobile_src_imagesdomain_jarandcoinsfull:I = 0x7f080045
+
+.field public static ___libs_all_uiassets_mobile_src_imagesdomain_onepercentmatchsplash:I = 0x7f080046
+
+.field public static ___libs_all_uiassets_mobile_src_imagesdomain_swipecardpoof:I = 0x7f080047
+
+.field public static ___libs_all_uiassets_mobile_src_imagesdomain_swipecardpoofdark:I = 0x7f080048
+
+.field public static ___libs_all_uiassets_mobile_src_imagesdomain_visaw:I = 0x7f080049
+
+.field public static ___libs_mobile_microuis_onboarding_src_features_accountopeningsdk_components_predictions_educationalcarousel_slides_assets_slide2:I = 0x7f08004a
+
+.field public static ___libs_mobile_microuis_onboarding_src_features_accountopeningsdk_components_predictions_educationalcarousel_slides_assets_slide2poster:I = 0x7f08004b
+
+.field public static ___libs_mobile_microuis_onboarding_src_features_accountopeningsdk_components_predictions_educationalcarousel_slides_assets_slide3:I = 0x7f08004c
+
+.field public static ___libs_mobile_microuis_onboarding_src_features_accountopeningsdk_components_predictions_educationalcarousel_slides_assets_slide3poster:I = 0x7f08004d
+
+.field public static ___libs_mobile_microuis_onboarding_src_features_accountopeningsdk_components_predictions_educationalcarousel_slides_assets_slide4:I = 0x7f08004e
+
+.field public static ___libs_mobile_microuis_onboarding_src_features_accountopeningsdk_components_predictions_educationalcarousel_slides_assets_slide4poster:I = 0x7f08004f
+
+.field public static ___libs_mobile_microuis_onboarding_src_features_accountopeningsdk_components_predictions_educationalcarousel_slides_assets_slide5:I = 0x7f080050
+
+.field public static ___node_modules_pnpm_reactnativeflashmessage0124_proptypes1581_reactnative0862_patch_hashe9b8_608ff83abb87b627ce3edc6aecc319d9_node_modules_reactnativeflashmessage_src_icons_fm_icon_danger:I = 0x7f080051
+
+.field public static ___node_modules_pnpm_reactnativeflashmessage0124_proptypes1581_reactnative0862_patch_hashe9b8_608ff83abb87b627ce3edc6aecc319d9_node_modules_reactnativeflashmessage_src_icons_fm_icon_info:I = 0x7f080052
+
+.field public static ___node_modules_pnpm_reactnativeflashmessage0124_proptypes1581_reactnative0862_patch_hashe9b8_608ff83abb87b627ce3edc6aecc319d9_node_modules_reactnativeflashmessage_src_icons_fm_icon_success:I = 0x7f080053
+
+.field public static ___node_modules_pnpm_reactnativeflashmessage0124_proptypes1581_reactnative0862_patch_hashe9b8_608ff83abb87b627ce3edc6aecc319d9_node_modules_reactnativeflashmessage_src_icons_fm_icon_warning:I = 0x7f080054
+
+.field public static ___node_modules_pnpm_reactnavigationelements1331_93bfcf99e6f8e1a72e8c3f3e428463f6_node_modules_reactnavigation_elements_src_assets_backicon:I = 0x7f080055
+
+.field public static ___node_modules_pnpm_reactnavigationelements1331_93bfcf99e6f8e1a72e8c3f3e428463f6_node_modules_reactnavigation_elements_src_assets_backiconmask:I = 0x7f080056
+
+.field public static ic_launcher_background:I = 0x7f080319
+
+.field public static rn_edit_text_material:I = 0x7f080522
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

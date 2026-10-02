@@ -1,0 +1,186 @@
+.class public final Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit$Creator;
+.super Ljava/lang/Object;
+.source "SelfieState.kt"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Creator"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+    .locals 13
+
+    const-string v0, "parcel"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-eq v2, v0, :cond_0
+
+    const-class v3, Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+
+    invoke-virtual {v3}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v3
+
+    invoke-virtual {p1, v3}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    move-object v4, v1
+
+    check-cast v4, Ljava/util/List;
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-class v0, Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lcom/withpersona/sdk2/camera/CameraProperties;
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
+
+    move-result-wide v7
+
+    const-class v0, Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    move-result-object v0
+
+    move-object v9, v0
+
+    check-cast v9, Lcom/withpersona/sdk2/inquiry/selfie/SelfieState;
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/withpersona/sdk2/camera/CameraProperties$FacingMode;->valueOf(Ljava/lang/String;)Lcom/withpersona/sdk2/camera/CameraProperties$FacingMode;
+
+    move-result-object v10
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v11
+
+    const-class v0, Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    move-object v12, p1
+
+    check-cast v12, Lcom/withpersona/sdk2/inquiry/network/core/InternalErrorInfo;
+
+    new-instance v3, Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+
+    invoke-direct/range {v3 .. v12}, Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;-><init>(Ljava/util/List;Ljava/lang/String;Lcom/withpersona/sdk2/camera/CameraProperties;JLcom/withpersona/sdk2/inquiry/selfie/SelfieState;Lcom/withpersona/sdk2/camera/CameraProperties$FacingMode;ILcom/withpersona/sdk2/inquiry/network/core/InternalErrorInfo;)V
+
+    return-object v3
+.end method
+
+.method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit$Creator;->createFromParcel(Landroid/os/Parcel;)Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final newArray(I)[Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+    .locals 0
+
+    new-array p1, p1, [Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+
+    return-object p1
+.end method
+
+.method public bridge synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit$Creator;->newArray(I)[Lcom/withpersona/sdk2/inquiry/selfie/SelfieState$Submit;
+
+    move-result-object p1
+
+    return-object p1
+.end method
