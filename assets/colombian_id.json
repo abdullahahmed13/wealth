@@ -1,0 +1,12 @@
+[
+  {
+    "fields": [
+      "number",
+      "last_name",
+      "name"
+    ],
+    "regexes": [
+      "CEDULA DE CIUDADANIA\\nNUMERO\\s+([0-9.]+)\\n([A-Z ]+)\\nAPELLIDOS\\n([A-Z ]+)\\nNOMBRES"
+    ]
+  }
+]

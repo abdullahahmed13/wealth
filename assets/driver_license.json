@@ -1,0 +1,50 @@
+[
+  {
+    "fields": [
+      "class"
+    ],
+    "regexes": [
+      "CLASS\\s([A-Z]+)"
+    ]
+  },
+  {
+    "fields": [
+      "dl"
+    ],
+    "regexes": [
+      "DL\\s(\\d+)"
+    ]
+  },
+  {
+    "fields": [
+      "exp_date"
+    ],
+    "regexes": [
+      "EXP\\s(\\d{2}/\\d{2}/\\d{4})"
+    ]
+  },
+  {
+    "fields": [
+      "sex"
+    ],
+    "regexes": [
+      "SEX\\s([MF])"
+    ]
+  },
+  {
+    "fields": [
+      "fn"
+    ],
+    "regexes": [
+      "FN\\s([A-Z ]+)"
+    ]
+  },
+  {
+    "fields": [
+      "ln"
+    ],
+    "regexes": [
+      "LN\\s([A-Z ]+)"
+    ]
+  }
+]

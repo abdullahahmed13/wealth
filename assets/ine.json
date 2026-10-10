@@ -1,0 +1,68 @@
+[
+  {
+    "fields": [
+      "last_name",
+      "name"
+    ],
+    "regexes": [
+      "NOMBRE\\t+SEXO [A-Z](?:\\n([A-z]+)(?:\\s?\\t[A-z]+)?)(?:\\n([A-z]+)(?:\\s?\\t[A-z]+)?)\\n([A-z ]+)(?:\\n(?:\\t[A-z]+)?)+DOMICILIO",
+      "NOMBRE\\t+FECHA DE NACIMIENTO\\n([A-z ]+)\\t+\\d{2}\\/\\d{2}\\/\\d{4}\\n([A-z ]+)\\t+SEXO [A-z]\\n([A-z ]+)\\s"
+    ],
+    "concatenate_groups" : [
+      [1, 2],
+      [3]
+    ]
+  },
+  {
+    "fields": [
+      "address"
+    ],
+    "regexes": [
+      "DOMICILIO(?:\\s?\\t+[\\w \\/]+)*\\n([-\\w ,.Ñ]+)(?:\\s?\\t+[\\w \\/]+)*\\n([-\\w ,.Ñ]+)(?:\\s?\\t+[\\w \\/]+)*\\n([-\\w ,.Ñ]+)(?:\\s?\\t+[\\w \\/]+)*\\nCLAVE"
+    ],
+    "concatenate_all_groups" : true
+  },
+  {
+    "fields": [
+      "birth_date"
+    ],
+    "regexes": [
+      "\\sFECHA DE NACIMIENTO[\\s\\w]+(\\d{2}\\/\\d{2}\\/\\d{4})\\s"
+    ]
+  },
+  {
+    "fields": [
+      "sex"
+    ],
+    "regexes": [
+      "\\sSEXO ([A-Z])\\s"
+    ]
+  },
+  {
+    "fields": [
+      "electoral_key"
+    ],
+    "regexes": [
+      "\\sCLAVE DE ELECTOR\\s(\\w{10,})\\s"
+    ]
+  },
+  {
+    "fields": [
+      "curp",
+      "register_date"
+    ],
+    "regexes": [
+      "\\sCURP\\t+A\\wO DE REGISTRO\\n(?:\\w{0,5}\\s*)(\\w{10,})\\t(\\d{4}[ \\t]\\d{2})",
+      "\\sCURP[ \\t](\\w{10,})[ \\t]A\\wO DE REGISTRO[ \\t](\\d{4}[ \\t]\\d{2})\\s"
+    ]
+  },
+  {
+    "fields": [
+      "validity_period"
+    ],
+    "regexes": [
+      "\\sVIGENCIA(?:[ \\t0-9\\/]*\\n?){1,2}(\\d{4}\\-\\d{4})",
+      "\\sVIGENCIA[ t](\\d{4})\\n"
+    ]
+  }
+]

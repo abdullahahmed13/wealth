@@ -1,0 +1,35 @@
+[
+  {
+    "fields": [
+      "name"
+    ],
+    "regexes": [
+      "Name\\/Nombre\\s*([A-Z ]+[A-Z])"
+    ]
+  },
+  {
+    "fields": [
+      "number"
+    ],
+    "regexes": [
+      "Medicare Number\\/Número de Medicare\\s*([A-Z0-9-]+)"
+    ]
+  },
+  {
+    "fields": [
+      "coverage_a"
+    ],
+    "regexes": [
+      "HOSPITAL \\(PART A\\)\\s*([0-9]{2}-[0-9]{2}-[0-9]{4})"
+    ]
+  },
+  {
+    "fields": [
+      "coverage_b"
+    ],
+    "regexes": [
+      "MEDICAL \\(PART B\\)\\s*([0-9]{2}-[0-9]{2}-[0-9]{4})",
+      "PART B\\s*([0-9]{2}-[0-9]{2}-[0-9]{4})"
+    ]
+  }
+]
